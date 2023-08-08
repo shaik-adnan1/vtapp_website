@@ -1,0 +1,47 @@
+.navigation {
+}
+
+.navigation_cont {
+    position: absolute;
+    width: 100%;
+  background: 171b1f;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  position: absolute, sticky;
+  padding: 40px 70px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+
+}
+
+.logo_img {
+    height: 30px;
+}
+
+.nav_links {
+
+    margin-right: 50px;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.nav_link {
+    color: #fff;
+    text-decoration: none;
+    font-size: .85rem;
+    padding: 10px;
+    transition: all .3s ease;
+}
+
+.nav_link:hover {
+    color: #9747fe;
+}
+
+.nav_link:hover:last-child {
+    background-color: #fff;
+}
+
+.nav_link:not(:last-child) {
+    margin-right: 40px;
+}
