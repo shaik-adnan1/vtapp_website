@@ -1,21 +1,16 @@
-
 .section_decor {
-    position: absolute;
+  position: absolute;
 }
 
 .section_decor1 {
-    top: -45%;
-    left: -30%;
+  top: -30%;
+  left: -30%;
 }
 
 .section_decor2 {
-    bottom: -20%;
-    right: -30%;
-}
-
-.home_section {
-  background-image: url("../../assets/home/hero_bg.png");
-  background-size: cover;
+  bottom: -20%;
+  right: -20%;
+  transform: rotate(-180px);
 }
 
 .hero_img {
@@ -23,58 +18,98 @@
 }
 
 .hero_content {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-image: url("../../assets/home/hero_bg.png");
+  background-size: cover;
+  /* height: 100%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero_info {
-    color: #fff;
-    text-align: center;
-    margin-top: 20px;
-    margin-left: 10px;
-    font-size: 1.4rem;
-    font-weight: 400 !important;
-    font-family: raleway;
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 10px;
+  font-size: 1.4rem;
+  font-weight: 400 !important;
+  font-family: raleway;
 }
 
 .hero_info h3 {
-    margin-top: 10px;
+  margin-top: 10px;
 }
-
 
 /* ABOUT SECTION */
 
 .home_about {
-    padding: 2rem;
-    text-align: center;
-    overflow: hidden;
+  padding: 2rem;
+  text-align: center;
 }
 
 .section_heading {
-    font-size: 4.2rem;
-    text-transform: uppercase;
-    font-weight: 500 !important;
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 500 !important;
+  position: relative;
+  text-align: center;
+  /* width: fit-content; */
+}
+
+.section_heading::after {
+  content: "";
+  height: 3px;
+  width: 100px;
+  background-color: #9747fe;
+  position: absolute;
+  bottom: -10px;
+  left: 46%;
+  /* right: 0; */
 }
 
 .heading_span {
-    color: #9747fe;
+  color: #9747fe;
 }
 
 .about_sec_content {
-    font-size: 1.4rem;
-    text-align: justify;
-    margin-top: 2rem;
-    padding: 2rem;
-    font-weight: 300;
-    line-height: 3rem;
+  font-size: 1.4rem;
+  text-align: justify;
+  margin-top: 2rem;
+  padding: 2rem;
+  font-weight: 300;
+  line-height: 3rem;
 }
 
 .about_content_details {
-    font-weight: bold;
-    font-size: 1.4rem;
-    margin-top: 1.5rem;
-    text-align: left;
-    padding-left: 2rem;
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
+  text-align: left;
+  padding-left: 2rem;
+}
+
+/* Events section */
+
+.home_event {
+  background-color: #171b1f;
+  color: #fff;
+  text-align: center;
+  padding: 3rem;
+  /* font-weight: 400 !important; */
+}
+
+.event_cards {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 3rem;
+  padding: 0 2rem;
+}
+
+.explore_event_btn {
+  margin-top: 4rem;
+}
+
+.explore_btn {
+  font-size: 1.2rem;
+  font-weight: 400;
 }

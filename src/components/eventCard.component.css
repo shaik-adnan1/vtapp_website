@@ -1,0 +1,93 @@
+.card {
+  height: auto;
+  width: 450px;
+  border: 2px solid #9747fe;
+  z-index: 2;
+  text-align: center;
+  /* display: flex;
+    flex-direction: column; */
+  border-radius: 2rem;
+  padding: 2rem;
+}
+
+.event_img {
+  height: 250px;
+  /* border: 2px solid #9747fe; */
+  /* border-radius: 1.2rem; */
+}
+
+.event_content {
+  padding: 0 1rem;
+  text-align: left;
+  font-weight: 500;
+}
+
+.event_name {
+  font-size: 1.2rem;
+  margin-top: 1.8rem;
+}
+
+.event_description {
+  font-size: 0.8rem;
+  /* text-align: justify; */
+  margin-top: 1rem;
+}
+
+.event_keywords {
+  margin: 2rem 0;
+}
+
+.keyword_link {
+  background: linear-gradient(#171b1f, #171b1f) padding-box,
+    linear-gradient(to bottom, #9747fe, #ffffffb3) border-box;
+  border-radius: 50em;
+  border: 2px solid transparent;
+  padding: 0.5rem 1rem;
+}
+
+.keyword_link:hover {
+  background-color: #fff;
+  color: #9747fe;
+}
+
+.keyword_link:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.event_fee {
+  font-size: 1rem;
+}
+
+.register_btn_cnt {
+  margin-top: 3rem;
+  text-align: center;
+  font-weight: 400 !important;
+}
+/* 
+.merch_cta:hover {
+    transform: translateX(10px) !important;
+} */
+
+.event_card {
+  color: #fff;
+}
+
+.event_page_heading {
+  margin: 2rem 0;
+}
+
+.event_page_heading::after {
+  content: none;
+}
+
+.event_card_cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80%;
+  /* align-items: center; */
+}
+
+.event_card {
+  margin-top: 5rem;
+}

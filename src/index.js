@@ -7,6 +7,7 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 
 import Navigation from './routes/navigation/navigation.route';
+import Footer from './routes/footer/footer.route';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -15,6 +16,7 @@ root.render(
     
     <Navigation />
     <App />
+    <Footer />
     </BrowserRouter>
   </React.StrictMode>
 );

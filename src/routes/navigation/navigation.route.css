@@ -2,16 +2,17 @@
 }
 
 .navigation_cont {
-    position: absolute;
+    position: fixed;
     width: 100%;
-  background: 171b1f;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+  background: #171b1f27;
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
   position: absolute, sticky;
-  padding: 40px 70px;
+  padding: 20px 70px;
   display: flex;
   justify-content: space-between;
-  z-index: 1;
+  align-items: center;
+  z-index: 99;
 
 }
 
@@ -26,7 +27,7 @@
 
 }
 
-.nav_link {
+.link {
     color: #fff;
     text-decoration: none;
     font-size: .85rem;
@@ -36,10 +37,6 @@
 
 .nav_link:hover {
     color: #9747fe;
-}
-
-.nav_link:hover:last-child {
-    background-color: #fff;
 }
 
 .nav_link:not(:last-child) {

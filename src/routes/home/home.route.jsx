@@ -1,14 +1,33 @@
 import "./home.route.css";
 
-import heroLogo from "../../assets/home/logo.png";
+import { Link } from "react-router-dom";
+import EventCard from "../../components/eventCard.component.jsx";
 
-import secDecor from '../../assets/common/decor.png'
+import heroLogo from "../../assets/home/logo.png";
+import secDecor from "../../assets/common/decor.png";
+
+import eventImg1 from "../../assets/home/event1.png";
+import merch1 from '../../assets/home/merch1.png'
+import merch2 from '../../assets/home/merch2.png'
+import MerchCard from "../../components/merch.component";
+
+const eventData = 
+  {
+    event_name: "VTAPP Designathon 2K22",
+    event_disc: `Workshop on User Interface and User Experience (UI/UX) & Design
+            models'`,
+    event_keywords: "CSI Chapter",
+    event_fee: 1.4
+  };
+
+
+
 
 const Home = () => {
   return (
     <>
-      <div className='section home_section'>
-        <div className='hero_content'>
+      <div className='home_section'>
+        <div className='section hero_content'>
           <div className='home_hero'>
             <img className='hero_img' src={heroLogo} alt='Vtapp Logo' />
             <div className='hero_info'>
@@ -20,7 +39,7 @@ const Home = () => {
         <div className='home_about section'>
           <img src={secDecor} alt='' className='section_decor section_decor1' />
           <img src={secDecor} alt='' className='section_decor section_decor2' />
-          <h1 className='about_section section_heading'>
+          <h1 className='about_heading section_heading'>
             About <span className='heading_span'>VTAPP</span>
           </h1>
           <p className='about_sec_content'>
@@ -47,6 +66,30 @@ const Home = () => {
             <p className='about_event_venue'>
               Where: VIT-AP University, Amaravati, Andhra Pradesh
             </p>
+          </div>
+        </div>
+        <div className='section home_event'>
+          <img src={secDecor} alt='' className='section_decor section_decor1' />
+          <img src={secDecor} alt='' className='section_decor section_decor2' />
+          <h1 className='event_heading section_heading'>Events</h1>
+          <div className='event_cards'>
+            <EventCard img={eventImg1} />
+            <EventCard img={eventImg1} />
+          </div>
+          <div className='explore_event_btn'>
+            <Link to='/events' className='cta_btn link explore_btn'>
+              Explore events
+            </Link>
+          </div>
+        </div>
+        <div className='section home_merch'>
+          <img src={secDecor} alt='' className='section_decor section_decor1' />
+          <img src={secDecor} alt='' className='section_decor section_decor2' />
+          <h1 className='event_heading section_heading'>
+            <span className='heading_span'>Merch</span>
+          </h1>
+          <div className='event_cards'>
+            <MerchCard img={merch1} />
           </div>
         </div>
       </div>

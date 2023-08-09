@@ -1,0 +1,50 @@
+.footer {
+  background-color: #171b1f;
+  padding: 3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.uni_img {
+  height: 8rem;
+}
+
+.contacts p {
+  margin: 1rem 0;
+}
+
+.active_span {
+  color: #C394FF;
+  cursor: pointer;
+}
+
+.qr {
+  color: #C394FF;
+}
+
+.footer_icon {
+  color: #fff;
+  font-size: 2rem;
+  margin-right: 1rem;
+  transition: all .3s ease;
+}
+
+.footer_icon:hover {
+  color: #C394FF;
+}
+
+.footer_head {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  color: #C394FF;
+}
+
+
+.social_extra {
+  margin-top: 1rem;
+}
+
