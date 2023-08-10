@@ -11,7 +11,7 @@ function App() {
     <Routes>
       <Route index element={<Home />} />
       <Route path='Events' element={<Events />} />
-      <Route path='sign-in' element={<SignIn />} />
+      {/* <Route path='sign-in' element={<SignIn />} /> */}
     </Routes>
   );
 }
